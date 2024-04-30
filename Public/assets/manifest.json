@@ -1,0 +1,36 @@
+{
+    "short_name": "Kruger Diary",
+    "name": "Kruger Diary",
+    "icons": [
+      {
+        "src": "/assets/img/favicon.png",
+        "sizes": "72x72",
+        "type": "image/png"
+      },
+      {
+        "src": "/assets/img/favicon.png",
+        "sizes": "128x128",
+        "type": "image/png"
+      },
+      {
+        "src": "/assets/img/favicon.png",
+        "sizes": "144x144",
+        "type": "image/png"
+      },
+      {
+        "src": "/assets/img/favicon.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/assets/img/favicon.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#f1c40f",
+    "background_color": "#f1c40f"
+  }
+  

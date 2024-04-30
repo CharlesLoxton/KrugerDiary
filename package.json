@@ -1,0 +1,32 @@
+{
+  "name": "krugerdiary",
+  "version": "1.0.0",
+  "description": "An app that you can use to track your journey through the Kruger National Park.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "author": "Charles Loxton",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@fastify/cookie": "^9.3.0",
+    "@fastify/cors": "^8.5.0",
+    "@fastify/flash": "^5.1.0",
+    "@fastify/formbody": "^7.4.0",
+    "@fastify/jwt": "^8.0.0",
+    "@fastify/secure-session": "^7.1.0",
+    "@fastify/static": "^6.12.0",
+    "@fastify/view": "^8.2.0",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "fastify": "^4.25.2",
+    "fastify-multer": "^2.0.3",
+    "qs": "^6.11.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
