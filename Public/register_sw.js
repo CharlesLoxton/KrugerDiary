@@ -1,7 +1,7 @@
 // register-sw.js
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', function() {
-        navigator.serviceWorker.register('/assets/scripts/register_sw.js')
+        navigator.serviceWorker.register('/register_sw.js')
             .then(function(registration) {
                 console.log('Service Worker registered with scope:', registration);
             }, function(err) {
