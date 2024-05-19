@@ -12,12 +12,12 @@ body {
 }
 @media only screen and (max-width: 575px) {
     .single-timeline-area {
-        padding-left: 100px;
+        padding-left: 50px;
     }
 }
 .single-timeline-area .timeline-date {
     position: absolute;
-    width: 180px;
+    width: 100px;
     height: 100%;
     top: 0;
     left: 0;
@@ -32,11 +32,11 @@ body {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    padding-right: 60px;
+    padding-right: 30px;
 }
 @media only screen and (max-width: 575px) {
     .single-timeline-area .timeline-date {
-        width: 100px;
+        width: 50px;
     }
 }
 .single-timeline-area .timeline-date::after {
@@ -82,6 +82,7 @@ body {
 @media only screen and (max-width: 575px) {
     .single-timeline-area .single-timeline-content {
         padding: 20px;
+        width: 100%;
     }
 }
 .single-timeline-area .single-timeline-content .timeline-icon {

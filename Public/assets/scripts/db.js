@@ -71,8 +71,9 @@ function renderSightings(sightings) {
         let cardHtml = '';
 
         let headingHtml = `
-        <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
-            <p>${key}</p>
+        <div class="d-flex align-items-center justify-content-center fw-bold" style="color: #f1c40f">${new Date(key).toDateString()}</div>
+        <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft; margin-left: "-10px";">
+            <p></p>
         </div>
         `
         sightings[key].forEach(sighting => {
@@ -82,7 +83,7 @@ function renderSightings(sightings) {
                 <div class="timeline-icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div>
                 <div class="timeline-text">
                     <h6>${sighting.animal}</h6>
-                    <p class="fw-bold text-mute">${new Date(key).toDateString()} at ${new Date(sighting.date).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</p>
+                    <p class="fw-bold text-mute">${new Date(sighting.date).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</p>
                     <p>${sighting.description}</p>
                 </div>
             </div>
@@ -116,6 +117,12 @@ function groupSightingsByDate(sightings) {
         }
         groups[sightingDate].push(sighting);
     });
+
+    // Sort each group by time in descending order
+    for (const date in groups) {
+        groups[date].sort((a, b) => new Date(b.date) - new Date(a.date));
+    }
+
     return groups;
 }
 
